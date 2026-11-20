@@ -248,6 +248,13 @@ body[data-page="home"] .hero-actions{margin-top:10px}
 .education-card .education-degree{gap:8px!important;line-height:1.4!important}
 @media(max-width:1000px){.education-grid{grid-template-columns:1fr!important}.education-card{max-width:760px}.christ-card .education-logo{width:165px!important;flex-basis:165px!important}}
 @media(max-width:500px){.education-card{padding:17px 15px!important;gap:12px!important}.christ-card .education-logo{width:108px!important;flex-basis:108px!important;height:78px!important}.symbiosis-card .education-logo{width:76px!important;flex-basis:76px!important;height:76px!important}.education-card h3{font-size:19px!important}.education-degree{font-size:13px!important}}
+
+/* Education hierarchy: institution is secondary to the qualification */
+.education-card h3{font-family:inherit!important;font-size:clamp(15px,1.4vw,18px)!important;font-weight:600!important;line-height:1.35!important;color:var(--muted)!important;margin:0 0 9px!important}
+.education-card .education-degree{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:10px!important;font-family:'Playfair Display',Georgia,serif!important;font-size:clamp(20px,2vw,25px)!important;font-weight:800!important;line-height:1.25!important;color:var(--text)!important}
+.education-card .education-degree .education-years{font-family:inherit!important;font-size:12px!important;font-weight:700!important;line-height:1.4!important}
+.education-card{min-height:0!important;padding-block:22px!important}
+@media(max-width:500px){.education-card h3{font-size:14px!important}.education-card .education-degree{font-size:19px!important;gap:8px!important}}
 </style></head>
 <body><header class="header"><div class="shell headinner"><a class="wordmark" href="#home"><span>LG</span> Lakshmi Gurumurthy</a><nav class="links" id="navigation" aria-label="Portfolio sections"><a href="#home">Home</a><a href="#career">Experience</a><a href="#work">Writing Samples</a><a href="#deep-dives">Case Studies</a><a href="#ux">UX Writing</a><a href="#expertise">Education, Learning &amp; Skills</a><a href="#contact">Contact</a></nav><button type="button" class="toggle" id="theme" aria-label="Switch to dark theme">☾ Dark</button></div></header>
 <main>
