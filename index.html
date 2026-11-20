@@ -164,6 +164,58 @@ body[data-page="home"] .hero-feature{grid-template-columns:minmax(0,1fr) minmax(
 .tool-chip{display:inline-flex;align-items:center;gap:9px;min-height:39px}.tool-chip img{display:block;flex:none;width:19px;height:19px;object-fit:contain}.tool-symbol{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:5px;background:var(--surface);color:var(--accent2);font-size:18px;font-weight:800;line-height:1}
 @media(max-width:800px){body[data-page="home"] .hero-feature{grid-template-columns:minmax(0,1fr) minmax(0,.9fr)!important;column-gap:22px!important}.hero-feature h1{font-size:clamp(39px,6vw,60px)!important}}
 @media(max-width:650px){body[data-page="home"] .hero-feature{display:flex!important;flex-direction:column!important;align-items:stretch!important;min-height:0!important;padding:32px 24px!important}.hero-feature .hero-portrait{order:3!important;align-self:center!important;width:100%!important;max-width:430px!important;margin-top:25px!important}.hero-feature .hero-chips{order:4!important}.hero-feature .hero-actions{order:5!important}.hero-feature h1{font-size:clamp(44px,11vw,65px)!important}}
+
+/* Home screen: fit the full first view within the available viewport */
+body[data-page="home"]{min-height:100dvh;display:flex;flex-direction:column}
+body[data-page="home"] .header{flex:0 0 auto}
+body[data-page="home"] main{flex:1 1 auto;min-height:0;display:flex;align-items:stretch}
+body[data-page="home"] .hero-feature{flex:1 1 auto;min-height:0!important;margin-top:12px!important;margin-bottom:8px!important;padding:clamp(18px,3vh,38px) clamp(22px,4vw,50px)!important;align-content:center!important}
+body[data-page="home"] .footer{flex:0 0 auto;padding:0!important}
+body[data-page="home"] .footer .footline{padding:8px 0!important}
+body[data-page="home"] .hero-feature .hero-kicker{margin-bottom:clamp(8px,2vh,22px)}
+body[data-page="home"] .hero-feature h1{font-size:clamp(38px,min(5.3vw,9vh),76px)!important;margin-bottom:clamp(8px,1.8vh,20px)}
+body[data-page="home"] .hero-prelude{margin-bottom:3px}
+body[data-page="home"] .hero-tagline{font-size:clamp(17px,2vw,25px);margin-bottom:clamp(7px,1.6vh,17px)}
+body[data-page="home"] .hero-description{font-size:clamp(12px,1.2vw,16px);line-height:1.55}
+body[data-page="home"] .hero-chips{margin-top:clamp(9px,1.6vh,16px)}
+body[data-page="home"] .hero-actions{margin-top:clamp(10px,1.7vh,18px)}
+body[data-page="home"] .hero-feature .cartoon-frame{max-height:min(58vh,450px)!important;aspect-ratio:3/2!important}
+body[data-page="home"] .hero-feature img.hero-illustration{max-height:min(58vh,450px)!important}
+@media(max-width:650px){
+body[data-page="home"] .header .headinner{padding-block:6px!important;row-gap:5px!important}
+body[data-page="home"] .header .links{padding:3px 0!important}
+body[data-page="home"] .header .links a{padding:5px 8px!important}
+body[data-page="home"] .hero-feature{padding:clamp(12px,2.4vh,22px) 20px!important;margin-top:6px!important;margin-bottom:4px!important;justify-content:center!important;gap:0!important}
+body[data-page="home"] .hero-feature .hero-kicker{font-size:9px;letter-spacing:.08em;margin-bottom:6px}
+body[data-page="home"] .hero-prelude{font-size:17px}
+body[data-page="home"] .hero-feature h1{font-size:clamp(35px,min(10vw,7.2vh),54px)!important;margin-bottom:7px;line-height:1}
+body[data-page="home"] .hero-tagline{font-size:17px;line-height:1.25;margin-bottom:7px}
+body[data-page="home"] .hero-description{font-size:12px;line-height:1.4}
+body[data-page="home"] .hero-feature .hero-portrait{margin-top:clamp(8px,1.5vh,14px)!important;width:min(100%,340px)!important}
+body[data-page="home"] .hero-feature .cartoon-frame{max-height:clamp(125px,25vh,235px)!important;width:auto!important;max-width:100%!important;aspect-ratio:3/2!important;margin:auto}
+body[data-page="home"] .hero-feature img.hero-illustration{height:100%!important;max-height:clamp(125px,25vh,235px)!important}
+body[data-page="home"] .hero-chips{margin-top:8px;gap:5px}
+body[data-page="home"] .hero-chips span{font-size:9px;padding:4px 8px}
+body[data-page="home"] .hero-actions{margin-top:9px;gap:7px}
+body[data-page="home"] .hero-actions .btn{font-size:11px;padding:8px 11px}
+body[data-page="home"] .footer .footline{font-size:10px;margin-top:0;padding:5px 0!important}
+}
+@media(max-width:650px) and (max-height:740px){
+body[data-page="home"] .hero-description{display:none}
+body[data-page="home"] .hero-feature .cartoon-frame,body[data-page="home"] .hero-feature img.hero-illustration{max-height:22vh!important}
+body[data-page="home"] .hero-chips span{font-size:9px;padding:3px 6px}
+}
+@media(max-width:650px) and (max-height:600px){
+body[data-page="home"] .hero-chips{display:none}
+body[data-page="home"] .hero-feature .cartoon-frame,body[data-page="home"] .hero-feature img.hero-illustration{max-height:19vh!important}
+body[data-page="home"] .footer{display:none!important}
+}
+@media(min-width:651px) and (max-height:720px){
+body[data-page="home"] .hero-feature .hero-description{font-size:13px;line-height:1.4}
+body[data-page="home"] .hero-feature .hero-kicker{margin-bottom:8px}
+body[data-page="home"] .hero-chips{margin-top:8px}
+body[data-page="home"] .hero-actions{margin-top:10px}
+}
 </style></head>
 <body><header class="header"><div class="shell headinner"><a class="wordmark" href="#home"><span>LG</span> Lakshmi Gurumurthy</a><nav class="links" id="navigation" aria-label="Portfolio sections"><a href="#home">Home</a><a href="#career">Experience</a><a href="#education">Education</a><a href="#work">Writing Samples</a><a href="#deep-dives">Case Studies</a><a href="#ux">UX Writing</a><a href="#expertise">Skills</a><a href="#contact">Contact</a></nav><button type="button" class="toggle" id="theme" aria-label="Switch to dark theme">☾ Dark</button></div></header>
 <main>
