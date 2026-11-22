@@ -427,6 +427,15 @@ body[data-page="home"] .hero-expertise{display:grid;gap:9px;margin:17px 0;color:
 .company-logo-name{align-items:center}
 .company-logo-name h3,.company-logo-name h4{margin:0!important}
 @media(max-width:760px){.company-project-layout,.domain-rubrik-top,.domain-logichub,.domain-247{grid-template-columns:1fr!important;column-gap:0}.company-project-layout .company-group-heading{padding:0 0 18px}.company-project-layout .salesforce-projects{padding:18px 0 0}}
+
+/* Simplified single-column writing samples, without column dividers. */
+.company-project-layout{display:block!important;margin-top:32px!important}
+.company-project-layout .company-group-heading{position:static!important;padding:0 0 18px!important;margin:0 0 12px!important;border:0!important}
+.company-project-layout .salesforce-projects{margin:0!important;padding:0!important;border:0!important}
+.domain-rubrik-top,.domain-logichub,.domain-247{grid-template-columns:minmax(0,1fr)!important;gap:18px!important}
+.domain-rubrik-top>p,.domain-logichub-copy,.domain-247>div:last-child{border-left:0!important;padding-left:0!important}
+.company-group-heading h3,.domain-rubrik h3,.domain-logichub h3,.domain-247 h4{color:#1c2431!important}
+body.dark .company-group-heading h3,body.dark .domain-rubrik h3,body.dark .domain-logichub h3,body.dark .domain-247 h4{color:inherit!important}
 </style></head>
 <body><header class="header"><div class="shell headinner"><a class="wordmark" href="#home"><span>LG</span> Lakshmi Gurumurthy</a><nav class="links" id="navigation" aria-label="Portfolio sections"><a href="#home">About Me</a><a href="#career">Experience</a><a href="#work">Writing Samples</a><a href="#ux">UX Writing</a><a href="#expertise">Education &amp; Skills</a></nav><button type="button" class="toggle" id="theme" aria-label="Switch to dark theme">☾ Dark</button></div></header>
 <main>
